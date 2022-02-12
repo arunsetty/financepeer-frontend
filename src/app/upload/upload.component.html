@@ -1,0 +1,9 @@
+<!-- <form (click)="Upload()">
+    <input type="file" accept=".json" id="myFile" name="filename" [(ngModel)]="uploadDetails.file">
+    <input type="submit">
+</form> -->
+<div *ngIf="this.userDetails">
+<input type="file" id="selectFiles" value="Import" #selectFiles/><br />
+<button id="import" (click)="function()" #import>Upload</button>
+<p id="result"></p>
+</div>

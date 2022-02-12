@@ -1,0 +1,19 @@
+<!-- {{this.jsonDetails}} -->
+
+<div class="container">
+    <h2>JSON Details Table</h2>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">User ID</div>
+        <div class="col col-2">ID</div>
+        <div class="col col-3">Title</div>
+        <div class="col col-4">Body</div>
+      </li>
+      <li *ngFor="let each of this.jsonDetails" class="table-row">
+        <div class="col col-1">{{each.userId}}</div>
+        <div class="col col-2">{{each.id}}</div>
+        <div class="col col-3">{{each.title}}</div>
+        <div class="col col-4">{{each.body}}</div>
+      </li>
+    </ul>
+</div>

@@ -1,0 +1,20 @@
+<!-- Taken from https://codepen.io/oceatoon/details/nzwJxd -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<div class='login'>
+    <h2>Register</h2>
+    <form (ngSubmit)="Register()">
+        <input name='fullname' placeholder='Full Name' type='text' required [(ngModel)]="userDetails.fullname">
+        <input name='username' placeholder='Username' type='text' required [(ngModel)]="userDetails.username">
+        <input name='email' placeholder='E-Mail Address' type='text' required [(ngModel)]="userDetails.email">
+        <input id='pw' name='password' placeholder='Password' type='password' required [(ngModel)]="userDetails.password">
+        &nbsp;
+        <!-- <div class='agree'>
+          <input id='agree' name='agree' type='checkbox'>
+          <label for='agree'></label>Accept rules and conditions
+        </div> -->
+        <input type='submit' value='Register'>
+    </form>
+    <a class='forgot' href='/login'>Already have an account?</a>
+</div>

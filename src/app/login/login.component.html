@@ -1,0 +1,14 @@
+<!-- Taken from https://codepen.io/oceatoon/details/nzwJxd -->
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+<div class='login'>
+    <h2>Login</h2>
+    <form (ngSubmit)="Login()">
+        <input name='email' placeholder='E-Mail Address' type='text' required [(ngModel)]="userDetails.email">
+        <input id='pw' name='password' placeholder='Password' type='password' required [(ngModel)]="userDetails.password">
+        &nbsp;
+        <input type='submit' value='Login'>
+    </form>
+    <a class='forgot' href='/register'>Don't have an account?</a>
+</div>
